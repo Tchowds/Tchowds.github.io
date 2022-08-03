@@ -159,3 +159,17 @@ footer {
 .contact-list a{
     padding: 15px
 }
+
+/*Media queries
+---------------------------*/
+
+@media screen and (max-width: 780px) {
+    h1{
+        font-size: 64px;
+    }
+
+    .contact-list{
+        display: block;
+    }
+    
+}
