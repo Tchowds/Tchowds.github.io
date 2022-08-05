@@ -29,10 +29,6 @@ html{
     box-sizing: inherit;
 }
 
-
-img {
-    width: 300px;
-}
 a {
     color: crimson;
 
@@ -69,7 +65,7 @@ h3{
     padding: 20px;
 }
 .content-wrap {
-    max-width: 800px;
+    max-width: 1400px;
     width: 85%;
     margin: 0 auto;
     padding: 60px 0;
@@ -108,13 +104,17 @@ header {
 
 .project-item h3{
     margin-top: 0%;
+    padding-bottom: 0px;
 }
 
-
-#porto{
+.project-item img{
+    width: 400px;
     float: left;
-    padding: 0 20px
+    padding: 40px 20px 
 }
+
+
+
 
 
 /*work experience
@@ -126,11 +126,6 @@ header {
     color: white;
     clear: both;
 }
-.job-item{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    column-gap: 20px;
-}
 
 .Work-experience h3{
     text-align: left;
@@ -140,6 +135,14 @@ header {
 /* education
 ------------------------------*/
 
+.Education .divider > section{
+    border-bottom: 1px dashed #001f54ff;
+    padding: 25px 0;
+}
+
+.Education .divider > section:last-of-type{
+    border-bottom: none;
+}
 
 /* contact info
 ------------------------------*/
@@ -162,23 +165,20 @@ footer {
 
 /*Media queries
 ---------------------------*/
-/* 
-@media screen and (max-width: 780px) {
-    h1{
-        font-size: 64px;
-    }
-
-    .contact-list{
-        display: block;
-    }
-    
-} */
 
 @media screen and (min-width: 799px) {
     h1{
         font-size: 100px;
     }
     
+    .job-item{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 20px;
+    }
+
+
+
     .contact-list{
         display: flex;
     }
